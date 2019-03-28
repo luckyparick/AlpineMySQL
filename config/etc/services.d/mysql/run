@@ -1,0 +1,5 @@
+#!/bin/sh
+if [ ! -d "/run/mysqld" ]; then
+  mkdir -p /run/mysqld
+fi
+/usr/bin/mysqld --user=root --console
